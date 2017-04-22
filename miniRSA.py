@@ -1,5 +1,6 @@
 import sys
 import random
+import os
 import fractions
 
 
@@ -79,7 +80,7 @@ def gen_prime() :
 	return (primes[random.randint(1, len(primes)-1)])
 	"""
 	
-	n = 100
+	n = 1024
 	if n == 2 : 
 		return [2]
 	elif n < 2 :
@@ -184,7 +185,7 @@ def keygen() :
 	d = mod_inverse(e, m)
 #	print "d is %0d" % d
 
-	print "Public Key: (%0d, %0d)" % (e, c)
+	#print "Public Key: (%0d, %0d)" % (e, c)
 	#print "private key: (%0d, %0d)" % (d, c)
 
 	## ONLY FOR TESTING ##
